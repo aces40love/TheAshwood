@@ -1,0 +1,2333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE ASHWOOD | Ultra-Luxury Executive Estate &middot; 12 South, Nashville</title>
+  <meta name="description" content="The Ashwood is Nashville's premier private executive residence located in the prestigious 12 South enclave. Featuring 5 bedrooms, 4.5 baths, private heated pool, detached carriage house, and bespoke Maybach Sprinter chauffeur service for 30 to 180+ day stays." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-deep: #0B0A08;
+      --bg-dark: #12110E;
+      --bg-card: #181714;
+      --bg-light: #FAF8F5;
+      --bg-subtle: #F3EFE9;
+      --accent-gold: #C8A97E;
+      --accent-gold-light: #E4D1B9;
+      --accent-emerald: #244238;
+      --accent-bronze: #8D6B4F;
+      --text-main: #EAE6DF;
+      --text-muted: #9E988F;
+      --text-dark: #1F1D1A;
+      --text-dark-muted: #6B655D;
+      --border-dark: rgba(200, 169, 126, 0.2);
+      --border-light: rgba(31, 29, 26, 0.12);
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-display: 'Cinzel', serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-deep);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.8;
+      letter-spacing: -0.01em;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-smooth);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1360px, calc(100% - 64px));
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: calc(100% - 36px);
+      }
+    }
+
+    /* TYPOGRAPHY UTILITIES */
+    .eyebrow {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .eyebrow::before, .eyebrow::after {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 1px;
+      background: var(--accent-gold);
+      opacity: 0.6;
+    }
+    .eyebrow.no-flourish::before, .eyebrow.no-flourish::after {
+      display: none;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+
+    h2 {
+      font-size: clamp(38px, 5vw, 68px);
+      color: var(--text-main);
+    }
+
+    h3 {
+      font-size: clamp(26px, 3.5vw, 42px);
+    }
+
+    .section-desc {
+      font-size: clamp(18px, 1.6vw, 22px);
+      color: var(--text-muted);
+      max-width: 740px;
+      margin-top: 18px;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    /* BUTTONS */
+    .btn-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: linear-gradient(135deg, #D4B892 0%, #B89363 100%);
+      color: #0A0908;
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      padding: 16px 36px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition-smooth);
+      box-shadow: 0 4px 24px rgba(200, 169, 126, 0.25);
+    }
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(200, 169, 126, 0.4);
+      background: linear-gradient(135deg, #E2CCA9 0%, #C4A172 100%);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: transparent;
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      padding: 15px 34px;
+      border: 1px solid var(--border-dark);
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+    .btn-outline:hover {
+      border-color: var(--accent-gold);
+      color: var(--accent-gold);
+      background: rgba(200, 169, 126, 0.05);
+    }
+
+    /* LUXURY HEADER NAVIGATION */
+    header.site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      padding: 24px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: var(--transition-smooth);
+      background: linear-gradient(to bottom, rgba(11, 10, 8, 0.85) 0%, rgba(11, 10, 8, 0) 100%);
+    }
+    header.site-header.scrolled {
+      background: rgba(11, 10, 8, 0.94);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 16px 48px;
+      border-bottom: 1px solid rgba(200, 169, 126, 0.15);
+    }
+    .brand-mark {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 20px;
+      letter-spacing: 0.28em;
+      color: #FFFFFF;
+      font-weight: 500;
+    }
+    .brand-sub {
+      font-size: 9px;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      margin-top: 2px;
+    }
+
+    nav.desktop-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 36px;
+    }
+    nav.desktop-nav a {
+      font-size: 12px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-main);
+      opacity: 0.8;
+      transition: var(--transition-smooth);
+      position: relative;
+      padding-bottom: 4px;
+    }
+    nav.desktop-nav a:hover {
+      opacity: 1;
+      color: var(--accent-gold);
+    }
+    nav.desktop-nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 1px;
+      background: var(--accent-gold);
+      transition: var(--transition-smooth);
+    }
+    nav.desktop-nav a:hover::after {
+      width: 100%;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      header.site-header {
+        padding: 18px 24px;
+      }
+      nav.desktop-nav {
+        display: none;
+      }
+    }
+
+    /* HERO SECTION */
+    section.hero {
+      position: relative;
+      height: 100vh;
+      min-height: 720px;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 80px;
+      overflow: hidden;
+    }
+    .hero-slider {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 1.8s ease-in-out, transform 8s ease-out;
+      transform: scale(1.06);
+    }
+    .hero-slide.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .hero-slide img {
+      filter: brightness(0.68) contrast(1.05);
+    }
+    .hero-gradient {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: linear-gradient(
+        to top,
+        rgba(11, 10, 8, 0.95) 0%,
+        rgba(11, 10, 8, 0.4) 40%,
+        rgba(11, 10, 8, 0.3) 70%,
+        rgba(11, 10, 8, 0.75) 100%
+      );
+    }
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 18px;
+      border: 1px solid var(--border-dark);
+      background: rgba(18, 17, 14, 0.6);
+      backdrop-filter: blur(8px);
+      margin-bottom: 24px;
+    }
+    .hero-badge span {
+      font-size: 10px;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+    }
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(52px, 8.5vw, 112px);
+      letter-spacing: 0.16em;
+      color: #FFFFFF;
+      font-weight: 500;
+      margin-bottom: 18px;
+      line-height: 0.95;
+    }
+    .hero-subtitle {
+      font-family: var(--font-serif);
+      font-size: clamp(22px, 3vw, 36px);
+      font-style: italic;
+      color: var(--accent-gold-light);
+      max-width: 780px;
+      margin-bottom: 40px;
+      font-weight: 300;
+      line-height: 1.3;
+    }
+    .hero-cta-group {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    /* STATS RIBBON */
+    .stats-ribbon {
+      position: relative;
+      z-index: 10;
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-dark);
+      border-bottom: 1px solid var(--border-dark);
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
+    .stat-item {
+      padding: 36px 20px;
+      text-align: center;
+      border-right: 1px solid var(--border-dark);
+      position: relative;
+    }
+    .stat-item:last-child {
+      border-right: none;
+    }
+    .stat-number {
+      font-family: var(--font-serif);
+      font-size: clamp(32px, 3vw, 44px);
+      color: var(--accent-gold);
+      font-weight: 500;
+      display: block;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat-label {
+      font-size: 13px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      display: block;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 1024px) {
+      .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .stat-item:nth-child(3) {
+        border-right: none;
+      }
+      .stat-item:nth-child(-n+3) {
+        border-bottom: 1px solid var(--border-dark);
+      }
+    }
+    @media (max-width: 640px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .stat-item:nth-child(2n) {
+        border-right: none;
+      }
+      .stat-item:nth-child(-n+4) {
+        border-bottom: 1px solid var(--border-dark);
+      }
+    }
+
+    /* SECTION BASE */
+    section.editorial-section {
+      padding: 140px 0;
+      position: relative;
+    }
+    @media (max-width: 768px) {
+      section.editorial-section {
+        padding: 90px 0;
+      }
+    }
+
+    /* ARCHITECTURAL ESSENCE STORY */
+    .essence-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 90px;
+      align-items: center;
+    }
+    .essence-copy {
+      display: flex;
+      flex-direction: column;
+    }
+    .essence-copy p {
+      margin-top: 24px;
+      font-size: 20px;
+      color: var(--text-muted);
+      line-height: 1.9;
+      font-weight: 300;
+    }
+    .essence-quote {
+      margin-top: 36px;
+      padding-left: 28px;
+      border-left: 3px solid var(--accent-gold);
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-style: italic;
+      color: var(--accent-gold-light);
+      line-height: 1.5;
+    }
+    .essence-visual {
+      position: relative;
+    }
+    .essence-frame {
+      position: relative;
+      height: 640px;
+      overflow: hidden;
+      border: 1px solid var(--border-dark);
+    }
+    
+
+    @media (max-width: 992px) {
+      .essence-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+      }
+      .essence-frame {
+        height: 480px;
+      }
+      
+    }
+
+    /* CINEMATIC FILM SECTION */
+    .film-container {
+      position: relative;
+      background: var(--bg-dark);
+      border: 1px solid var(--border-dark);
+      overflow: hidden;
+      margin-top: 48px;
+    }
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000;
+    }
+    .video-wrapper video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* SPACES FILTERABLE GALLERY */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 48px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--border-dark);
+      padding-bottom: 24px;
+    }
+    .filter-pill {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      font-family: var(--font-sans);
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+    .filter-pill:hover {
+      color: var(--text-main);
+      border-color: rgba(200, 169, 126, 0.3);
+    }
+    .filter-pill.active {
+      color: #0A0908;
+      background: var(--accent-gold);
+      border-color: var(--accent-gold);
+      font-weight: 600;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    @media (max-width: 1100px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 640px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .gallery-card {
+      position: relative;
+      background: var(--bg-card);
+      border: 1px solid var(--border-dark);
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      cursor: pointer;
+    }
+    .gallery-card.hidden {
+      display: none;
+    }
+    .card-media {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .card-media img {
+      filter: brightness(0.88);
+    }
+    .gallery-card:hover .card-media img {
+      transform: scale(1.05);
+      filter: brightness(0.65);
+    }
+    .card-overlay {
+      position: absolute;
+      inset: 0;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: linear-gradient(to top, rgba(11, 10, 8, 0.95) 0%, rgba(11, 10, 8, 0.2) 60%, transparent 100%);
+      opacity: 0;
+      transition: var(--transition-smooth);
+      transform: translateY(10px);
+    }
+    .gallery-card:hover .card-overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .card-tag {
+      font-size: 12px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    .card-title {
+      font-family: var(--font-serif);
+      font-size: 24px;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .card-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 16px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .view-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      border: 1px solid var(--accent-gold);
+      color: var(--accent-gold);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      cursor: pointer;
+      width: fit-content;
+      transition: var(--transition-smooth);
+    }
+    .view-btn:hover {
+      background: var(--accent-gold);
+      color: #0A0908;
+    }
+
+    /* LIGHTBOX MODAL */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: rgba(8, 7, 6, 0.96);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+    .lightbox.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 32px;
+      right: 48px;
+      background: transparent;
+      border: none;
+      color: var(--text-main);
+      font-size: 32px;
+      cursor: pointer;
+      z-index: 1010;
+      transition: var(--transition-smooth);
+    }
+    .lightbox-close:hover {
+      color: var(--accent-gold);
+      transform: rotate(90deg);
+    }
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(24, 23, 20, 0.7);
+      border: 1px solid var(--border-dark);
+      color: var(--text-main);
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 1010;
+      transition: var(--transition-smooth);
+    }
+    .lightbox-nav:hover {
+      background: var(--accent-gold);
+      color: #0A0908;
+    }
+    .lightbox-prev { left: 36px; }
+    .lightbox-next { right: 36px; }
+    .lightbox-content {
+      width: min(1100px, 90vw);
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox-img-wrapper {
+      width: 100%;
+      height: calc(100% - 70px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox-img-wrapper img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+    }
+    .lightbox-info {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .lightbox-title {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      color: #FFFFFF;
+    }
+    .lightbox-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* DETACHED CARRIAGE HOUSE FEATURE SECTION */
+    .dadu-feature {
+      background: var(--bg-dark);
+      border-top: 1px solid var(--border-dark);
+      border-bottom: 1px solid var(--border-dark);
+    }
+    .dadu-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .dadu-card-mosaic {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .dadu-thumb {
+      height: 260px;
+      overflow: hidden;
+      border: 1px solid var(--border-dark);
+      position: relative;
+    }
+    .dadu-thumb.span-2 {
+      grid-column: span 2;
+      height: 320px;
+    }
+    .dadu-perks {
+      list-style: none;
+      margin-top: 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .dadu-perk-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .perk-bullet {
+      width: 8px;
+      height: 8px;
+      background: var(--accent-gold);
+      border-radius: 50%;
+      margin-top: 8px;
+      flex-shrink: 0;
+    }
+    .perk-text strong {
+      display: block;
+      color: var(--text-main);
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .perk-text span {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 992px) {
+      .dadu-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+    }
+
+    /* NEIGHBORHOOD 12 SOUTH GUIDE */
+    .enclave-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .enclave-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-dark);
+      padding: 36px 28px;
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+    .enclave-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent-gold);
+      box-shadow: 0 12px 36px rgba(0,0,0,0.5);
+    }
+    .enclave-distance {
+      font-size: 13px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      margin-bottom: 14px;
+      display: block;
+      font-weight: 600;
+    }
+    .enclave-card h4 {
+      font-size: 26px;
+      color: #FFFFFF;
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+    .enclave-card p {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 1024px) {
+      .enclave-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .enclave-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* WHITE GLOVE AMENITIES & ARRIVAL */
+    .amenities-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 56px;
+    }
+    .amenity-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-dark);
+      padding: 40px 32px;
+      position: relative;
+    }
+    .amenity-icon {
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--border-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-gold);
+      margin-bottom: 24px;
+    }
+    .amenity-card h4 {
+      font-size: 26px;
+      color: #FFFFFF;
+      margin-bottom: 14px;
+    }
+    .amenity-card p {
+      font-size: 17px;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    @media (max-width: 900px) {
+      .amenities-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* SPECIFICATIONS SCHEDULE */
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 48px;
+    }
+    .specs-table tr {
+      border-bottom: 1px solid var(--border-dark);
+    }
+    .specs-table td {
+      padding: 24px 18px;
+      font-size: 17px;
+    }
+    .specs-table td.spec-name {
+      color: var(--accent-gold-light);
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      width: 32%;
+    }
+    .specs-table td.spec-val {
+      color: var(--text-main);
+      font-weight: 300;
+    }
+
+    /* PRIVATE INQUIRY SECTION */
+    section.inquiry-section {
+      background: linear-gradient(to bottom, var(--bg-dark) 0%, var(--bg-deep) 100%);
+      border-top: 1px solid var(--border-dark);
+      padding: 140px 0;
+    }
+    .inquiry-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 80px;
+      align-items: flex-start;
+    }
+    .inquiry-form {
+      background: var(--bg-card);
+      border: 1px solid var(--border-dark);
+      padding: 48px;
+    }
+    .form-group {
+      margin-bottom: 24px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    label {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      margin-bottom: 8px;
+    }
+    input, select, textarea {
+      width: 100%;
+      background: var(--bg-dark);
+      border: 1px solid var(--border-dark);
+      color: var(--text-main);
+      padding: 16px 20px;
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 300;
+      transition: var(--transition-smooth);
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--accent-gold);
+      box-shadow: 0 0 16px rgba(200, 169, 126, 0.15);
+    }
+    select option {
+      background: var(--bg-dark);
+      color: var(--text-main);
+    }
+
+    @media (max-width: 900px) {
+      .inquiry-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+      .inquiry-form {
+        padding: 32px 24px;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* FOOTER */
+    footer.site-footer {
+      background: #060605;
+      border-top: 1px solid rgba(200, 169, 126, 0.15);
+      padding: 80px 0 40px;
+      color: var(--text-muted);
+    }
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(200, 169, 126, 0.1);
+      padding-top: 32px;
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SITE HEADER -->
+  <header class="site-header" id="header">
+    <a href="#top" class="brand-mark">
+      <span class="brand-title">THE ASHWOOD</span>
+      <span class="brand-sub">12 South &middot; Nashville</span>
+    </a>
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="#estate">The Estate</a></li>
+        <li><a href="#film">Cinematic Film</a></li>
+        <li><a href="#spaces">Spaces &amp; Gallery</a></li>
+        <li><a href="#carriage-house">Carriage House</a></li>
+        <li><a href="#neighborhood">12 South</a></li>
+        <li><a href="#concierge">The Arrival</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="#inquire" class="btn-gold" style="padding: 12px 24px; font-size: 11px;">Inquire Residence</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="top">
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide active">
+        <img src="photos/2705604-1.jpg" alt="The Ashwood Twilight Pool Sanctuary" />
+      </div>
+      <div class="hero-slide">
+        <img src="photos/2705604-0.jpg" alt="The Ashwood Craftsman Architectural Facade" />
+      </div>
+      <div class="hero-slide">
+        <img src="photos/2705604-14.jpg" alt="The Ashwood Chef's Epicurean Kitchen" />
+      </div>
+      <div class="hero-slide">
+        <img src="photos/2705604-41.jpg" alt="The Ashwood Grand Covered Veranda" />
+      </div>
+    </div>
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+      <div class="container">
+        <div class="hero-badge">
+          <span>12 South Enclave &middot; Nashville, Tennessee</span>
+        </div>
+        <h1 class="hero-title">THE ASHWOOD</h1>
+        <p class="hero-subtitle">A bespoke private luxury estate and carriage house for discerning corporate executives, medical leaders, and entertainment productions.</p>
+        <div class="hero-cta-group">
+          <a href="#spaces" class="btn-gold">Explore The Spaces</a>
+          <a href="#film" class="btn-outline">Watch The Film</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS RIBBON -->
+  <div class="stats-ribbon">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-number">5</span>
+        <span class="stat-label">Bedrooms Total</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">4.5</span>
+        <span class="stat-label">Luxury Baths</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">4,861</span>
+        <span class="stat-label">Square Feet</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">Heated</span>
+        <span class="stat-label">Pool &amp; Spa Oasis</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">2 BR / 1 BA</span>
+        <span class="stat-label">Detached DADU House</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">Maybach</span>
+        <span class="stat-label">Chauffeur Service</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- THE ESTATE ARCHITECTURAL ESSENCE -->
+  <section class="editorial-section" id="estate">
+    <div class="container">
+      <div class="essence-grid">
+        <div class="essence-copy">
+          <span class="eyebrow">Architectural Heritage</span>
+          <h2>A Grand Private Residence in Nashville's Most Coveted Enclave</h2>
+          <p>Situated quietly on historic Ashwood Avenue between Belmont Boulevard and the vibrant 12 South avenue, The Ashwood represents the pinnacle of private residential hospitality. This is not a hotel suite or a commercial rental; it is a turnkey luxury home curated to the standards of the world’s most discerning travelers.</p>
+          <p>Behind the artisan cedar shake facade lies an expansive floor plan designed for effortless executive living, confidential meetings, and sophisticated entertaining. From the temperature-regulated wine service and chef's kitchen to the sun-drenched second-floor executive loft, every square foot is tailored for productive work and profound rest.</p>
+          <div class="essence-quote">
+            &ldquo;Live. Work. Entertain. A house prepared with quiet perfection before your flight touches down at BNA.&rdquo;
+          </div>
+        </div>
+        <div class="essence-visual">
+          <div class="essence-frame" style="height: 600px; border-radius: 4px; box-shadow: 0 24px 64px rgba(0,0,0,0.6);">
+            <img src="photos/2705604-0.jpg" alt="Craftsman exterior of The Ashwood" style="object-fit: cover; width: 100%; height: 100%;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CINEMATIC FILM SHOWCASE (PLACEHOLDER) -->
+  <section class="editorial-section" id="film" style="background: var(--bg-dark); border-top: 1px solid var(--border-dark); border-bottom: 1px solid var(--border-dark);">
+    <div class="container">
+      <div style="text-align: center; max-width: 820px; margin: 0 auto;">
+        <span class="eyebrow">Cinematic Feature Film</span>
+        <h2>The Ashwood Experience</h2>
+        <p class="section-desc" style="margin: 16px auto 0; font-size: 20px;">A master 4K architectural film showcasing the illuminated pool sanctuary, private carriage house, and the vibrant pulse of 12 South.</p>
+      </div>
+      <div class="film-container" style="margin-top: 48px; border-radius: 6px; position: relative; background: #000; overflow: hidden; border: 1px solid rgba(200, 169, 126, 0.3); box-shadow: 0 20px 60px rgba(0,0,0,0.8);">
+        <div class="video-wrapper" style="position: relative; width: 100%; aspect-ratio: 16 / 9; background: #000;">
+          <video id="ashwoodMasterVideo" controls playsinline preload="auto" poster="photos/2705604-1.jpg" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <source src="video/THE-ASHWOOD-commercial.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPACES & COMPLETE 48-PHOTO GALLERY -->
+  <section class="editorial-section" id="spaces">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 24px;">
+        <div>
+          <span class="eyebrow">Visual Inventory</span>
+          <h2>The Curated Spaces</h2>
+          <p class="section-desc">Explore all 48 architectural viewpoints spanning the main estate, executive workspaces, spa suites, and detached carriage residence.</p>
+        </div>
+        <div>
+          <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-gold);">48 Masterpiece Perspectives</span>
+        </div>
+      </div>
+
+      <!-- FILTER TABS -->
+      <div class="filter-bar">
+        <button class="filter-pill active" onclick="filterGallery('all', this)">All Perspectives (48)</button>
+        <button class="filter-pill" onclick="filterGallery('exterior', this)">Exterior &amp; Facade</button>
+        <button class="filter-pill" onclick="filterGallery('grounds', this)">Pool &amp; Veranda</button>
+        <button class="filter-pill" onclick="filterGallery('living', this)">Great Room &amp; Living</button>
+        <button class="filter-pill" onclick="filterGallery('kitchen', this)">Epicurean Kitchen &amp; Dining</button>
+        <button class="filter-pill" onclick="filterGallery('suites', this)">Primary Sanctuary &amp; Suites</button>
+        <button class="filter-pill" onclick="filterGallery('office', this)">Executive Workspaces</button>
+        <button class="filter-pill" onclick="filterGallery('dadu', this)">Detached Carriage House</button>
+      </div>
+
+      <!-- GALLERY GRID -->
+      <div class="gallery-grid" id="galleryGrid">
+        
+      <div class="gallery-card" data-category="exterior" data-index="0">
+        <div class="card-media">
+          <img src="photos/2705604-0.jpg" alt="The Historic Craftsman Facade" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Exterior</span>
+            <h4 class="card-title">The Historic Craftsman Facade</h4>
+            <p class="card-desc">Immaculate architectural restoration featuring cedar shake, artisan masonry, and bespoke entry.</p>
+            <button class="view-btn" onclick="openLightbox(0)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="grounds" data-index="1">
+        <div class="card-media">
+          <img src="photos/2705604-1.jpg" alt="The Twilight Pool Oasis" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Pool & Grounds</span>
+            <h4 class="card-title">The Twilight Pool Oasis</h4>
+            <p class="card-desc">Heated architectural pool surrounded by manicured turf, bistro illumination, and private lounging.</p>
+            <button class="view-btn" onclick="openLightbox(1)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="grounds" data-index="2">
+        <div class="card-media">
+          <img src="photos/2705604-2.jpg" alt="Evening Veranda & Courtyard" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Pool & Grounds</span>
+            <h4 class="card-title">Evening Veranda & Courtyard</h4>
+            <p class="card-desc">Private illuminated courtyard with gas fire accents and heated outdoor living spaces.</p>
+            <button class="view-btn" onclick="openLightbox(2)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="grounds" data-index="3">
+        <div class="card-media">
+          <img src="photos/2705604-3.jpg" alt="Covered Ground-Level Loggia" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Pool & Grounds</span>
+            <h4 class="card-title">Covered Ground-Level Loggia</h4>
+            <p class="card-desc">Deep shaded outdoor salon with custom teak furnishings overlooking the pool.</p>
+            <button class="view-btn" onclick="openLightbox(3)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="exterior" data-index="4">
+        <div class="card-media">
+          <img src="photos/2705604-4.jpg" alt="Ashwood Enclave Aerial" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Neighborhood</span>
+            <h4 class="card-title">Ashwood Enclave Aerial</h4>
+            <p class="card-desc">Prime positioning on historic Ashwood Avenue between 12 South and Belmont Boulevard.</p>
+            <button class="view-btn" onclick="openLightbox(4)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="grounds" data-index="5">
+        <div class="card-media">
+          <img src="photos/2705604-5.jpg" alt="Upper Balcony View" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Pool & Grounds</span>
+            <h4 class="card-title">Upper Balcony View</h4>
+            <p class="card-desc">Elevated terrace connecting the upper living quarters to the private grounds.</p>
+            <button class="view-btn" onclick="openLightbox(5)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="living" data-index="6">
+        <div class="card-media">
+          <img src="photos/2705604-6.jpg" alt="Private Media & Screening Salon" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Living Areas</span>
+            <h4 class="card-title">Private Media & Screening Salon</h4>
+            <p class="card-desc">Acoustically tuned cinema lounge with 4K projection, deep velvet seating, and blackout drapery.</p>
+            <button class="view-btn" onclick="openLightbox(6)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="suites" data-index="7">
+        <div class="card-media">
+          <img src="photos/2705604-7.jpg" alt="Artisan Sage Guest Bath" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Suites & Baths</span>
+            <h4 class="card-title">Artisan Sage Guest Bath</h4>
+            <p class="card-desc">Handcrafted subway tile, brushed champagne brass fixtures, and custom marble vanity.</p>
+            <button class="view-btn" onclick="openLightbox(7)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="living" data-index="8">
+        <div class="card-media">
+          <img src="photos/2705604-8.jpg" alt="The Grand Living Salon" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Living Areas</span>
+            <h4 class="card-title">The Grand Living Salon</h4>
+            <p class="card-desc">Artisan fireplace hearth, wide-plank white oak flooring, and custom mid-century furnishings.</p>
+            <button class="view-btn" onclick="openLightbox(8)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="living" data-index="9">
+        <div class="card-media">
+          <img src="photos/2705604-9.jpg" alt="Great Room to Kitchen Vista" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Living Areas</span>
+            <h4 class="card-title">Great Room to Kitchen Vista</h4>
+            <p class="card-desc">Seamless open-concept entertaining flow with natural Southern light throughout.</p>
+            <button class="view-btn" onclick="openLightbox(9)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="office" data-index="10">
+        <div class="card-media">
+          <img src="photos/2705604-10.jpg" alt="Sunroom Executive Study" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Workspaces</span>
+            <h4 class="card-title">Sunroom Executive Study</h4>
+            <p class="card-desc">Private sunlit executive workspace with vintage frosted glass pocket doors.</p>
+            <button class="view-btn" onclick="openLightbox(10)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="kitchen" data-index="11">
+        <div class="card-media">
+          <img src="photos/2705604-11.jpg" alt="Epicurean Kitchen & Central Stair" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Kitchen & Dining</span>
+            <h4 class="card-title">Epicurean Kitchen & Central Stair</h4>
+            <p class="card-desc">Architectural focal point connecting the entertaining level to upper suites.</p>
+            <button class="view-btn" onclick="openLightbox(11)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="kitchen" data-index="12">
+        <div class="card-media">
+          <img src="photos/2705604-12.jpg" alt="Chef’s Island & Formal Dining" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Kitchen & Dining</span>
+            <h4 class="card-title">Chef’s Island & Formal Dining</h4>
+            <p class="card-desc">Waterfall quartz island seating 4 with direct sightlines to the formal dining room.</p>
+            <button class="view-btn" onclick="openLightbox(12)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="kitchen" data-index="13">
+        <div class="card-media">
+          <img src="photos/2705604-13.jpg" alt="Gourmet Culinary Center" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Kitchen & Dining</span>
+            <h4 class="card-title">Gourmet Culinary Center</h4>
+            <p class="card-desc">Professional gas range, custom hood, pot filler, and walk-in pantry storage.</p>
+            <button class="view-btn" onclick="openLightbox(13)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="kitchen" data-index="14">
+        <div class="card-media">
+          <img src="photos/2705604-14.jpg" alt="Designer Island with Brass Pendants" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Kitchen & Dining</span>
+            <h4 class="card-title">Designer Island with Brass Pendants</h4>
+            <p class="card-desc">Bespoke deep emerald and brass appointments with integrated Sub-Zero refrigeration.</p>
+            <button class="view-btn" onclick="openLightbox(14)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="kitchen" data-index="15">
+        <div class="card-media">
+          <img src="photos/2705604-15.jpg" alt="The Formal Sage Dining Salon" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Kitchen & Dining</span>
+            <h4 class="card-title">The Formal Sage Dining Salon</h4>
+            <p class="card-desc">Intimate dining room featuring rounded walnut table, modern chandelier, and garden views.</p>
+            <button class="view-btn" onclick="openLightbox(15)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="kitchen" data-index="16">
+        <div class="card-media">
+          <img src="photos/2705604-16.jpg" alt="Formal Dining & Wine Service" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Kitchen & Dining</span>
+            <h4 class="card-title">Formal Dining & Wine Service</h4>
+            <p class="card-desc">Curated for 8-person private chef dinners and executive entertaining.</p>
+            <button class="view-btn" onclick="openLightbox(16)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="living" data-index="17">
+        <div class="card-media">
+          <img src="photos/2705604-17.jpg" alt="Main Foyer & Architectural Details" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Living Areas</span>
+            <h4 class="card-title">Main Foyer & Architectural Details</h4>
+            <p class="card-desc">Grand formal foyer with original millwork, crown molding, and artisan lighting.</p>
+            <button class="view-btn" onclick="openLightbox(17)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="suites" data-index="18">
+        <div class="card-media">
+          <img src="photos/2705604-18.jpg" alt="Primary Suite Dressing Lounge" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Suites & Baths</span>
+            <h4 class="card-title">Primary Suite Dressing Lounge</h4>
+            <p class="card-desc">Custom built-in wardrobe systems with integrated LED illumination.</p>
+            <button class="view-btn" onclick="openLightbox(18)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="suites" data-index="19">
+        <div class="card-media">
+          <img src="photos/2705604-19.jpg" alt="Primary Suite King Sanctuary" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Suites & Baths</span>
+            <h4 class="card-title">Primary Suite King Sanctuary</h4>
+            <p class="card-desc">Plush king-sized bed dressed in 800-thread Italian linens, vaulted ceiling, and blackout shades.</p>
+            <button class="view-btn" onclick="openLightbox(19)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="suites" data-index="20">
+        <div class="card-media">
+          <img src="photos/2705604-20.jpg" alt="Primary Spa Bath - Freestanding Soaker" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Suites & Baths</span>
+            <h4 class="card-title">Primary Spa Bath - Freestanding Soaker</h4>
+            <p class="card-desc">Sculptural soaking tub with floor-mounted brass filler overlooking private garden foliage.</p>
+            <button class="view-btn" onclick="openLightbox(20)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="suites" data-index="21">
+        <div class="card-media">
+          <img src="photos/2705604-21.jpg" alt="Primary Dual Vanity & Glass Shower" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Suites & Baths</span>
+            <h4 class="card-title">Primary Dual Vanity & Glass Shower</h4>
+            <p class="card-desc">Custom double marble vanity and walk-in multi-jet rain shower with seamless glass.</p>
+            <button class="view-btn" onclick="openLightbox(21)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="suites" data-index="22">
+        <div class="card-media">
+          <img src="photos/2705604-23.jpg" alt="Guest Bedroom - The Belmont Suite" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Suites & Baths</span>
+            <h4 class="card-title">Guest Bedroom - The Belmont Suite</h4>
+            <p class="card-desc">Quiet guest retreat with queen bed, fine linens, and dedicated closet.</p>
+            <button class="view-btn" onclick="openLightbox(22)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="suites" data-index="23">
+        <div class="card-media">
+          <img src="photos/2705604-24.jpg" alt="Guest Bedroom - The Vanderbilt Suite" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Suites & Baths</span>
+            <h4 class="card-title">Guest Bedroom - The Vanderbilt Suite</h4>
+            <p class="card-desc">Sun-drenched bedroom with plush appointments and dedicated workspace.</p>
+            <button class="view-btn" onclick="openLightbox(23)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="suites" data-index="24">
+        <div class="card-media">
+          <img src="photos/2705604-25.jpg" alt="Executive Bedroom Four" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Suites & Baths</span>
+            <h4 class="card-title">Executive Bedroom Four</h4>
+            <p class="card-desc">Thoughtfully furnished bedroom ideal for visiting executives or extended family.</p>
+            <button class="view-btn" onclick="openLightbox(24)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="suites" data-index="25">
+        <div class="card-media">
+          <img src="photos/2705604-26.jpg" alt="Upper Level Guest Bath" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Suites & Baths</span>
+            <h4 class="card-title">Upper Level Guest Bath</h4>
+            <p class="card-desc">Full modern bath serving upper guest accommodations with designer tiling.</p>
+            <button class="view-btn" onclick="openLightbox(25)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="living" data-index="26">
+        <div class="card-media">
+          <img src="photos/2705604-27.jpg" alt="Upper Level Landing & Library" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Living Areas</span>
+            <h4 class="card-title">Upper Level Landing & Library</h4>
+            <p class="card-desc">Quiet second-floor gallery connecting executive suites and private study.</p>
+            <button class="view-btn" onclick="openLightbox(26)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="dadu" data-index="27">
+        <div class="card-media">
+          <img src="photos/2705604-28.jpg" alt="Detached Carriage House Exterior" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Carriage House</span>
+            <h4 class="card-title">Detached Carriage House Exterior</h4>
+            <p class="card-desc">Separate two-story 2-bedroom, 1-bath guest residence across the pool courtyard.</p>
+            <button class="view-btn" onclick="openLightbox(27)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="dadu" data-index="28">
+        <div class="card-media">
+          <img src="photos/2705604-29%20%282%29.jpg" alt="Carriage House Private Entry" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Carriage House</span>
+            <h4 class="card-title">Carriage House Private Entry</h4>
+            <p class="card-desc">Independent keyless entry and private balcony overlooking the pool.</p>
+            <button class="view-btn" onclick="openLightbox(28)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="dadu" data-index="29">
+        <div class="card-media">
+          <img src="photos/2705604-30%20%282%29.jpg" alt="Carriage House Great Room" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Carriage House</span>
+            <h4 class="card-title">Carriage House Great Room</h4>
+            <p class="card-desc">Vaulted ceiling living room with contemporary sofa, media console, and direct deck access.</p>
+            <button class="view-btn" onclick="openLightbox(29)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="dadu" data-index="30">
+        <div class="card-media">
+          <img src="photos/2705604-31.jpg" alt="Carriage House Kitchenette" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Carriage House</span>
+            <h4 class="card-title">Carriage House Kitchenette</h4>
+            <p class="card-desc">Fully equipped kitchen with full-sized stainless appliances, cooktop, and quartz counters.</p>
+            <button class="view-btn" onclick="openLightbox(30)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="dadu" data-index="31">
+        <div class="card-media">
+          <img src="photos/2705604-32.jpg" alt="Carriage House Primary Bedroom" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Carriage House</span>
+            <h4 class="card-title">Carriage House Primary Bedroom</h4>
+            <p class="card-desc">Vaulted upper bedroom with luxury mattress, designer lighting, and built-in closet.</p>
+            <button class="view-btn" onclick="openLightbox(31)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="dadu" data-index="32">
+        <div class="card-media">
+          <img src="photos/2705604-33%20%282%29.jpg" alt="Carriage House Secondary Bedroom" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Carriage House</span>
+            <h4 class="card-title">Carriage House Secondary Bedroom</h4>
+            <p class="card-desc">Comfortable private bedroom designed for staff, nanny, security detail, or guests.</p>
+            <button class="view-btn" onclick="openLightbox(32)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="dadu" data-index="33">
+        <div class="card-media">
+          <img src="photos/2705604-35.jpg" alt="Carriage House Designer Bath" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Carriage House</span>
+            <h4 class="card-title">Carriage House Designer Bath</h4>
+            <p class="card-desc">Full bathroom with custom glass walk-in shower and stone vanity.</p>
+            <button class="view-btn" onclick="openLightbox(33)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="office" data-index="34">
+        <div class="card-media">
+          <img src="photos/2705604-36%20%282%29.jpg" alt="The Executive Work Loft" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Workspaces</span>
+            <h4 class="card-title">The Executive Work Loft</h4>
+            <p class="card-desc">Dedicated upstairs office with ergonomic executive desk, velvet lounge chairs, and high-speed fiber.</p>
+            <button class="view-btn" onclick="openLightbox(34)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="office" data-index="35">
+        <div class="card-media">
+          <img src="photos/2705604-37.jpg" alt="Second Floor Office Lounge" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Workspaces</span>
+            <h4 class="card-title">Second Floor Office Lounge</h4>
+            <p class="card-desc">Quiet setting designed for confidential video conferencing and board-level meetings.</p>
+            <button class="view-btn" onclick="openLightbox(35)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="dadu" data-index="36">
+        <div class="card-media">
+          <img src="photos/2705604-38%20%282%29.jpg" alt="Carriage House Upper Living Sanctuary" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Carriage House</span>
+            <h4 class="card-title">Carriage House Upper Living Sanctuary</h4>
+            <p class="card-desc">Airy vaulted living area with seamless flow to private elevated sun deck.</p>
+            <button class="view-btn" onclick="openLightbox(36)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="suites" data-index="37">
+        <div class="card-media">
+          <img src="photos/2705604-39.jpg" alt="Private Powder Room" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Suites & Baths</span>
+            <h4 class="card-title">Private Powder Room</h4>
+            <p class="card-desc">Main-level guest powder room with bespoke designer wallpaper and brass accents.</p>
+            <button class="view-btn" onclick="openLightbox(37)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="living" data-index="38">
+        <div class="card-media">
+          <img src="photos/2705604-40.jpg" alt="Laundry & Butler’s Utility" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Living Areas</span>
+            <h4 class="card-title">Laundry & Butler’s Utility</h4>
+            <p class="card-desc">High-capacity front-load washer/dryer with folding counter and linen storage.</p>
+            <button class="view-btn" onclick="openLightbox(38)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="grounds" data-index="39">
+        <div class="card-media">
+          <img src="photos/2705604-41.jpg" alt="The Grand Upper Veranda" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Pool & Grounds</span>
+            <h4 class="card-title">The Grand Upper Veranda</h4>
+            <p class="card-desc">Expansive covered cedar deck with dual ceiling fans and panoramic views of the estate grounds.</p>
+            <button class="view-btn" onclick="openLightbox(39)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="grounds" data-index="40">
+        <div class="card-media">
+          <img src="photos/2705604-42.jpg" alt="Pool Terrace from Covered Veranda" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Pool & Grounds</span>
+            <h4 class="card-title">Pool Terrace from Covered Veranda</h4>
+            <p class="card-desc">Architectural connection between main residence covered deck and pool terrace.</p>
+            <button class="view-btn" onclick="openLightbox(40)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="grounds" data-index="41">
+        <div class="card-media">
+          <img src="photos/2705604-43.jpg" alt="Rear Estate Elevation at Sundown" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Pool & Grounds</span>
+            <h4 class="card-title">Rear Estate Elevation at Sundown</h4>
+            <p class="card-desc">Complete view of main residence and carriage house illuminated against the Nashville sky.</p>
+            <button class="view-btn" onclick="openLightbox(41)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="grounds" data-index="42">
+        <div class="card-media">
+          <img src="photos/2705604-44.jpg" alt="Poolside Loungers & Lawn" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Pool & Grounds</span>
+            <h4 class="card-title">Poolside Loungers & Lawn</h4>
+            <p class="card-desc">Sunbathing terrace with premium chaise lounges and privacy fencing.</p>
+            <button class="view-btn" onclick="openLightbox(42)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="exterior" data-index="43">
+        <div class="card-media">
+          <img src="photos/2705604-45.jpg" alt="Two-Car Private Garage" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Exterior</span>
+            <h4 class="card-title">Two-Car Private Garage</h4>
+            <p class="card-desc">Secure attached garage with direct residence access and EV charging capability.</p>
+            <button class="view-btn" onclick="openLightbox(43)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="exterior" data-index="44">
+        <div class="card-media">
+          <img src="photos/2705604-46.jpg" alt="Gated Drive & Portico" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Exterior</span>
+            <h4 class="card-title">Gated Drive & Portico</h4>
+            <p class="card-desc">Discreet private vehicular entry with generous off-street executive parking.</p>
+            <button class="view-btn" onclick="openLightbox(44)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="exterior" data-index="45">
+        <div class="card-media">
+          <img src="photos/2705604-47.jpg" alt="Front Porch & Rockers" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Exterior</span>
+            <h4 class="card-title">Front Porch & Rockers</h4>
+            <p class="card-desc">Southern hospitality veranda with classic craftsman timber columns.</p>
+            <button class="view-btn" onclick="openLightbox(45)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="living" data-index="46">
+        <div class="card-media">
+          <img src="photos/2705604-49.jpg" alt="Architectural Details & Lighting" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Living Areas</span>
+            <h4 class="card-title">Architectural Details & Lighting</h4>
+            <p class="card-desc">Curated contemporary art collection and architectural lighting throughout.</p>
+            <button class="view-btn" onclick="openLightbox(46)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="gallery-card" data-category="grounds" data-index="47">
+        <div class="card-media">
+          <img src="photos/2705604-51.jpg" alt="The Ashwood Grounds at Dusk" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Pool & Grounds</span>
+            <h4 class="card-title">The Ashwood Grounds at Dusk</h4>
+            <p class="card-desc">The quintessential private retreat in the center of Nashville's most desirable enclave.</p>
+            <button class="view-btn" onclick="openLightbox(47)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <button class="lightbox-nav lightbox-prev" onclick="prevLightbox()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-next" onclick="nextLightbox()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+    <div class="lightbox-content">
+      <div class="lightbox-img-wrapper">
+        <img id="lightboxImg" src="" alt="The Ashwood Architectural Perspective" />
+      </div>
+      <div class="lightbox-info">
+        <h4 class="lightbox-title" id="lightboxTitle"></h4>
+        <p class="lightbox-desc" id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DETACHED CARRIAGE HOUSE SPOTLIGHT -->
+  <section class="editorial-section dadu-feature" id="carriage-house">
+    <div class="container">
+      <div class="dadu-grid">
+        <div class="dadu-card-mosaic">
+          <div class="dadu-thumb span-2">
+            <img src="photos/2705604-38%20(2).jpg" alt="Carriage House Vaulted Upper Living Room" />
+          </div>
+          <div class="dadu-thumb">
+            <img src="photos/2705604-30%20(2).jpg" alt="Carriage House Living Quarters" />
+          </div>
+          <div class="dadu-thumb">
+            <img src="photos/2705604-31.jpg" alt="Carriage House Full Kitchenette" />
+          </div>
+        </div>
+        <div>
+          <span class="eyebrow">Independent Living</span>
+          <h2>The Detached Carriage House (DADU)</h2>
+          <p class="section-desc">Situated across the private pool courtyard, the independent two-story carriage residence provides complete autonomous comfort for executive family members, personal assistants, visiting security detail, or extended entourage.</p>
+          <ul class="dadu-perks">
+            <li class="dadu-perk-item">
+              <div class="perk-bullet"></div>
+              <div class="perk-text">
+                <strong>2 Private Bedrooms</strong>
+                <span>Plush queen accommodations with vaulted ceilings</span>
+              </div>
+            </li>
+            <li class="dadu-perk-item">
+              <div class="perk-bullet"></div>
+              <div class="perk-text">
+                <strong>Gourmet Kitchenette</strong>
+                <span>Stainless steel range, refrigerator, and quartz counter</span>
+              </div>
+            </li>
+            <li class="dadu-perk-item">
+              <div class="perk-bullet"></div>
+              <div class="perk-text">
+                <strong>Designer Bath</strong>
+                <span>Glass walk-in shower and stone vanity</span>
+              </div>
+            </li>
+            <li class="dadu-perk-item">
+              <div class="perk-bullet"></div>
+              <div class="perk-text">
+                <strong>Private Keyless Access</strong>
+                <span>Independent entrance overlooking pool</span>
+              </div>
+            </li>
+          </ul>
+          <div style="margin-top: 40px;">
+            <a href="#inquire" class="btn-outline">Inquire Full Estate Stays</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 SOUTH NEIGHBORHOOD ENCLAVE -->
+  <section class="editorial-section" id="neighborhood">
+    <div class="container">
+      <div style="text-align: center; max-width: 780px; margin: 0 auto;">
+        <span class="eyebrow">Prime Location</span>
+        <h2>Nashville's Most Coveted Enclave</h2>
+        <p class="section-desc" style="margin: 16px auto 0;">Ashwood Avenue sits at the center of 12 South &mdash; Nashville’s premier walkable destination renowned for celebrated dining, boutique luxury retail, and tranquil leafy residential streets.</p>
+      </div>
+
+      <div class="enclave-grid">
+        <div class="enclave-card">
+          <span class="enclave-distance">3-Minute Walk</span>
+          <h4>12 South Boulevard</h4>
+          <p>Direct stroll to Locust, Frothy Monkey, Urban Grub, Bartaco, White’s Mercantile, and curated designer boutiques.</p>
+        </div>
+        <div class="enclave-card">
+          <span class="enclave-distance">4-Minute Drive</span>
+          <h4>Belmont &amp; Vanderbilt</h4>
+          <p>Immediate access to premier university campuses, renowned medical centers, and historic tree-lined parkways.</p>
+        </div>
+        <div class="enclave-card">
+          <span class="enclave-distance">7-Minute Drive</span>
+          <h4>Downtown Nashville &amp; The Gulch</h4>
+          <p>Swift executive transit to Broadway, Symphony Center, Bridgestone Arena, corporate headquarters, and Michelin-caliber dining.</p>
+        </div>
+        <div class="enclave-card">
+          <span class="enclave-distance">15-Minute Drive</span>
+          <h4>BNA International Airport</h4>
+          <p>Seamless airport connections with dedicated Maybach Sprinter chauffeur service meeting you curbside.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHITE GLOVE ARRIVAL & TRANSPORTATION -->
+  <section class="editorial-section" id="concierge" style="background: var(--bg-card); border-top: 1px solid var(--border-dark); border-bottom: 1px solid var(--border-dark);">
+    <div class="container">
+      <div style="text-align: center; max-width: 780px; margin: 0 auto;">
+        <span class="eyebrow">Turnkey Executive Hospitality</span>
+        <h2>The Ashwood Arrival Standard</h2>
+        <p class="section-desc" style="margin: 16px auto 0;">From the moment you touch down at Nashville International (BNA), your stay is orchestrated with seamless discretion and anticipatory care.</p>
+      </div>
+
+      <div class="amenities-grid">
+        <div class="amenity-card">
+          <div class="amenity-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></svg>
+          </div>
+          <h4>Maybach Sprinter Chauffeur</h4>
+          <p>Private executive transportation for airport transfers, corporate summits, private dining, and concert venue escorts.</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h4>Curated Provisioning</h4>
+          <p>Pantry pre-stocked with your preferred vintages, organic provisions, espresso roasts, and artisan delicacies before arrival.</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Discrete Estate Maintenance</h4>
+          <p>Dedicated weekly housekeeping, professional pool care, and groundskeeping coordinated around your personal schedule.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURAL SPECIFICATIONS TABLE -->
+  <section class="editorial-section">
+    <div class="container">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <span class="eyebrow">Estate Schedule</span>
+        <h2>Property Specifications</h2>
+        <table class="specs-table">
+          <tbody>
+            <tr>
+              <td class="spec-name">Location</td>
+              <td class="spec-val">1405 Ashwood Avenue, Nashville, TN 37212 (12 South / Belmont)</td>
+            </tr>
+            <tr>
+              <td class="spec-name">Living Space</td>
+              <td class="spec-val">4,861 Total Finished Square Feet across Main Estate &amp; Carriage House</td>
+            </tr>
+            <tr>
+              <td class="spec-name">Accommodations</td>
+              <td class="spec-val">5 Total Bedrooms (3 Main Upper Level, 2 Carriage House)</td>
+            </tr>
+            <tr>
+              <td class="spec-name">Bathrooms</td>
+              <td class="spec-val">4 Full Baths, 1 Powder Bath (Primary Spa with Freestanding Soaker)</td>
+            </tr>
+            <tr>
+              <td class="spec-name">Private Grounds</td>
+              <td class="spec-val">Heated in-ground pool, illuminated courtyard, covered veranda, gas fire accents</td>
+            </tr>
+            <tr>
+              <td class="spec-name">Connectivity</td>
+              <td class="spec-val">Gigabit enterprise fiber WiFi, dedicated executive study with conference seating</td>
+            </tr>
+            <tr>
+              <td class="spec-name">Parking &amp; Security</td>
+              <td class="spec-val">2-Car Attached Garage with EV charging, gated motor court, security system</td>
+            </tr>
+            <tr>
+              <td class="spec-name">Stay Horizon</td>
+              <td class="spec-val">Curated 30 to 180+ Day Executive Residencies</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVATE INQUIRY SECTION -->
+  <section class="inquiry-section" id="inquire">
+    <div class="container">
+      <div class="inquiry-grid">
+        <div>
+          <span class="eyebrow">Confidential Booking</span>
+          <h2>Private Residence Inquiry</h2>
+          <p class="section-desc">The Ashwood is offered for extended executive stays of 30 to 180+ days. Inquiries are reviewed promptly by our private hospitality concierge.</p>
+          
+          <div style="margin-top: 48px; border-left: 1px solid var(--border-dark); padding-left: 24px;">
+            <p style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-gold); margin-bottom: 8px;">Direct Estate Concierge</p>
+            <p style="font-size: 18px; color: var(--text-main); font-family: var(--font-serif);">concierge@theashwoodnashville.com</p>
+            <p style="font-size: 14px; color: var(--text-muted); margin-top: 4px;">Ashwood Avenue &middot; 12 South, Nashville, TN</p>
+          </div>
+        </div>
+
+        <div class="inquiry-form">
+          <form onsubmit="handleInquirySubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name / Principal</label>
+                <input type="text" id="inq_name" placeholder="Executive Name" required />
+              </div>
+              <div class="form-group">
+                <label>Corporate Entity / Title</label>
+                <input type="text" id="inq_company" placeholder="Company / Organization" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Confidential Email</label>
+                <input type="email" id="inq_email" placeholder="principal@enterprise.com" required />
+              </div>
+              <div class="form-group">
+                <label>Direct Phone</label>
+                <input type="tel" id="inq_phone" placeholder="+1 (615) 000-0000" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Estimated Arrival Date</label>
+                <input type="date" id="inq_arrival" required />
+              </div>
+              <div class="form-group">
+                <label>Length of Stay</label>
+                <select id="inq_duration">
+                  <option value="30-60">30 to 60 Days</option>
+                  <option value="60-90">60 to 90 Days</option>
+                  <option value="90-180">90 to 180 Days</option>
+                  <option value="180+">180+ Days (Extended Relocation)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Executive Transportation Option</label>
+              <select id="inq_transport">
+                <option value="residence-only">Residence Sanctuary Only</option>
+                <option value="residence-sprinter" selected>Residence + Maybach Sprinter Chauffeur Package</option>
+                <option value="full-executive">Full Private Executive (Dedicated Chauffeur &amp; 24/7 Concierge)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Special Requests / Family &amp; Team Details</label>
+              <textarea id="inq_notes" rows="4" placeholder="Detail any specific security requirements, family accommodations, pantry preferences, or private chef needs..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-gold" style="width: 100%;">Submit Confidential Inquiry</button>
+            <p id="inquirySuccess" style="display: none; color: var(--accent-gold); font-size: 13px; text-align: center; margin-top: 16px;">
+              Thank you. Your confidential request has been routed to The Ashwood Private Concierge.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="brand-mark">
+          <span class="brand-title" style="font-size: 24px;">THE ASHWOOD</span>
+          <span class="brand-sub">Luxury Executive Residence &middot; Nashville</span>
+        </div>
+        <div style="max-width: 480px; font-size: 13px; color: var(--text-muted);">
+          A private residential enclave in Nashville's 12 South neighborhood offering turnkey accommodations and dedicated executive transportation.
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 The Ashwood Nashville. All Rights Reserved.</div>
+        <div>1405 Ashwood Avenue &middot; Nashville, TN 37212</div>
+        <div>Private Stays Only (30+ Days)</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Header scroll background effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Hero background slideshow
+    const slides = document.querySelectorAll('.hero-slide');
+    let currentSlide = 0;
+    setInterval(() => {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }, 6000);
+
+    // Gallery Filter Logic
+    function filterGallery(category, btn) {
+      document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('.gallery-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Lightbox Data & Logic
+    const photoCatalog = [{"src": "2705604-0.jpg", "title": "The Historic Craftsman Facade", "category": "exterior", "tag": "Exterior", "desc": "Immaculate architectural restoration featuring cedar shake, artisan masonry, and bespoke entry."}, {"src": "2705604-1.jpg", "title": "The Twilight Pool Oasis", "category": "grounds", "tag": "Pool & Grounds", "desc": "Heated architectural pool surrounded by manicured turf, bistro illumination, and private lounging."}, {"src": "2705604-2.jpg", "title": "Evening Veranda & Courtyard", "category": "grounds", "tag": "Pool & Grounds", "desc": "Private illuminated courtyard with gas fire accents and heated outdoor living spaces."}, {"src": "2705604-3.jpg", "title": "Covered Ground-Level Loggia", "category": "grounds", "tag": "Pool & Grounds", "desc": "Deep shaded outdoor salon with custom teak furnishings overlooking the pool."}, {"src": "2705604-4.jpg", "title": "Ashwood Enclave Aerial", "category": "exterior", "tag": "Neighborhood", "desc": "Prime positioning on historic Ashwood Avenue between 12 South and Belmont Boulevard."}, {"src": "2705604-5.jpg", "title": "Upper Balcony View", "category": "grounds", "tag": "Pool & Grounds", "desc": "Elevated terrace connecting the upper living quarters to the private grounds."}, {"src": "2705604-6.jpg", "title": "Private Media & Screening Salon", "category": "living", "tag": "Living Areas", "desc": "Acoustically tuned cinema lounge with 4K projection, deep velvet seating, and blackout drapery."}, {"src": "2705604-7.jpg", "title": "Artisan Sage Guest Bath", "category": "suites", "tag": "Suites & Baths", "desc": "Handcrafted subway tile, brushed champagne brass fixtures, and custom marble vanity."}, {"src": "2705604-8.jpg", "title": "The Grand Living Salon", "category": "living", "tag": "Living Areas", "desc": "Artisan fireplace hearth, wide-plank white oak flooring, and custom mid-century furnishings."}, {"src": "2705604-9.jpg", "title": "Great Room to Kitchen Vista", "category": "living", "tag": "Living Areas", "desc": "Seamless open-concept entertaining flow with natural Southern light throughout."}, {"src": "2705604-10.jpg", "title": "Sunroom Executive Study", "category": "office", "tag": "Workspaces", "desc": "Private sunlit executive workspace with vintage frosted glass pocket doors."}, {"src": "2705604-11.jpg", "title": "Epicurean Kitchen & Central Stair", "category": "kitchen", "tag": "Kitchen & Dining", "desc": "Architectural focal point connecting the entertaining level to upper suites."}, {"src": "2705604-12.jpg", "title": "Chef\u2019s Island & Formal Dining", "category": "kitchen", "tag": "Kitchen & Dining", "desc": "Waterfall quartz island seating 4 with direct sightlines to the formal dining room."}, {"src": "2705604-13.jpg", "title": "Gourmet Culinary Center", "category": "kitchen", "tag": "Kitchen & Dining", "desc": "Professional gas range, custom hood, pot filler, and walk-in pantry storage."}, {"src": "2705604-14.jpg", "title": "Designer Island with Brass Pendants", "category": "kitchen", "tag": "Kitchen & Dining", "desc": "Bespoke deep emerald and brass appointments with integrated Sub-Zero refrigeration."}, {"src": "2705604-15.jpg", "title": "The Formal Sage Dining Salon", "category": "kitchen", "tag": "Kitchen & Dining", "desc": "Intimate dining room featuring rounded walnut table, modern chandelier, and garden views."}, {"src": "2705604-16.jpg", "title": "Formal Dining & Wine Service", "category": "kitchen", "tag": "Kitchen & Dining", "desc": "Curated for 8-person private chef dinners and executive entertaining."}, {"src": "2705604-17.jpg", "title": "Main Foyer & Architectural Details", "category": "living", "tag": "Living Areas", "desc": "Grand formal foyer with original millwork, crown molding, and artisan lighting."}, {"src": "2705604-18.jpg", "title": "Primary Suite Dressing Lounge", "category": "suites", "tag": "Suites & Baths", "desc": "Custom built-in wardrobe systems with integrated LED illumination."}, {"src": "2705604-19.jpg", "title": "Primary Suite King Sanctuary", "category": "suites", "tag": "Suites & Baths", "desc": "Plush king-sized bed dressed in 800-thread Italian linens, vaulted ceiling, and blackout shades."}, {"src": "2705604-20.jpg", "title": "Primary Spa Bath - Freestanding Soaker", "category": "suites", "tag": "Suites & Baths", "desc": "Sculptural soaking tub with floor-mounted brass filler overlooking private garden foliage."}, {"src": "2705604-21.jpg", "title": "Primary Dual Vanity & Glass Shower", "category": "suites", "tag": "Suites & Baths", "desc": "Custom double marble vanity and walk-in multi-jet rain shower with seamless glass."}, {"src": "2705604-23.jpg", "title": "Guest Bedroom - The Belmont Suite", "category": "suites", "tag": "Suites & Baths", "desc": "Quiet guest retreat with queen bed, fine linens, and dedicated closet."}, {"src": "2705604-24.jpg", "title": "Guest Bedroom - The Vanderbilt Suite", "category": "suites", "tag": "Suites & Baths", "desc": "Sun-drenched bedroom with plush appointments and dedicated workspace."}, {"src": "2705604-25.jpg", "title": "Executive Bedroom Four", "category": "suites", "tag": "Suites & Baths", "desc": "Thoughtfully furnished bedroom ideal for visiting executives or extended family."}, {"src": "2705604-26.jpg", "title": "Upper Level Guest Bath", "category": "suites", "tag": "Suites & Baths", "desc": "Full modern bath serving upper guest accommodations with designer tiling."}, {"src": "2705604-27.jpg", "title": "Upper Level Landing & Library", "category": "living", "tag": "Living Areas", "desc": "Quiet second-floor gallery connecting executive suites and private study."}, {"src": "2705604-28.jpg", "title": "Detached Carriage House Exterior", "category": "dadu", "tag": "Carriage House", "desc": "Separate two-story 2-bedroom, 1-bath guest residence across the pool courtyard."}, {"src": "2705604-29 (2).jpg", "title": "Carriage House Private Entry", "category": "dadu", "tag": "Carriage House", "desc": "Independent keyless entry and private balcony overlooking the pool."}, {"src": "2705604-30 (2).jpg", "title": "Carriage House Great Room", "category": "dadu", "tag": "Carriage House", "desc": "Vaulted ceiling living room with contemporary sofa, media console, and direct deck access."}, {"src": "2705604-31.jpg", "title": "Carriage House Kitchenette", "category": "dadu", "tag": "Carriage House", "desc": "Fully equipped kitchen with full-sized stainless appliances, cooktop, and quartz counters."}, {"src": "2705604-32.jpg", "title": "Carriage House Primary Bedroom", "category": "dadu", "tag": "Carriage House", "desc": "Vaulted upper bedroom with luxury mattress, designer lighting, and built-in closet."}, {"src": "2705604-33 (2).jpg", "title": "Carriage House Secondary Bedroom", "category": "dadu", "tag": "Carriage House", "desc": "Comfortable private bedroom designed for staff, nanny, security detail, or guests."}, {"src": "2705604-35.jpg", "title": "Carriage House Designer Bath", "category": "dadu", "tag": "Carriage House", "desc": "Full bathroom with custom glass walk-in shower and stone vanity."}, {"src": "2705604-36 (2).jpg", "title": "The Executive Work Loft", "category": "office", "tag": "Workspaces", "desc": "Dedicated upstairs office with ergonomic executive desk, velvet lounge chairs, and high-speed fiber."}, {"src": "2705604-37.jpg", "title": "Second Floor Office Lounge", "category": "office", "tag": "Workspaces", "desc": "Quiet setting designed for confidential video conferencing and board-level meetings."}, {"src": "2705604-38 (2).jpg", "title": "Carriage House Upper Living Sanctuary", "category": "dadu", "tag": "Carriage House", "desc": "Airy vaulted living area with seamless flow to private elevated sun deck."}, {"src": "2705604-39.jpg", "title": "Private Powder Room", "category": "suites", "tag": "Suites & Baths", "desc": "Main-level guest powder room with bespoke designer wallpaper and brass accents."}, {"src": "2705604-40.jpg", "title": "Laundry & Butler\u2019s Utility", "category": "living", "tag": "Living Areas", "desc": "High-capacity front-load washer/dryer with folding counter and linen storage."}, {"src": "2705604-41.jpg", "title": "The Grand Upper Veranda", "category": "grounds", "tag": "Pool & Grounds", "desc": "Expansive covered cedar deck with dual ceiling fans and panoramic views of the estate grounds."}, {"src": "2705604-42.jpg", "title": "Pool Terrace from Covered Veranda", "category": "grounds", "tag": "Pool & Grounds", "desc": "Architectural connection between main residence covered deck and pool terrace."}, {"src": "2705604-43.jpg", "title": "Rear Estate Elevation at Sundown", "category": "grounds", "tag": "Pool & Grounds", "desc": "Complete view of main residence and carriage house illuminated against the Nashville sky."}, {"src": "2705604-44.jpg", "title": "Poolside Loungers & Lawn", "category": "grounds", "tag": "Pool & Grounds", "desc": "Sunbathing terrace with premium chaise lounges and privacy fencing."}, {"src": "2705604-45.jpg", "title": "Two-Car Private Garage", "category": "exterior", "tag": "Exterior", "desc": "Secure attached garage with direct residence access and EV charging capability."}, {"src": "2705604-46.jpg", "title": "Gated Drive & Portico", "category": "exterior", "tag": "Exterior", "desc": "Discreet private vehicular entry with generous off-street executive parking."}, {"src": "2705604-47.jpg", "title": "Front Porch & Rockers", "category": "exterior", "tag": "Exterior", "desc": "Southern hospitality veranda with classic craftsman timber columns."}, {"src": "2705604-49.jpg", "title": "Architectural Details & Lighting", "category": "living", "tag": "Living Areas", "desc": "Curated contemporary art collection and architectural lighting throughout."}, {"src": "2705604-51.jpg", "title": "The Ashwood Grounds at Dusk", "category": "grounds", "tag": "Pool & Grounds", "desc": "The quintessential private retreat in the center of Nashville's most desirable enclave."}];
+    let activeLightboxIndex = 0;
+
+    function openLightbox(index) {
+      activeLightboxIndex = index;
+      updateLightboxContent();
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function updateLightboxContent() {
+      const item = photoCatalog[activeLightboxIndex];
+      const safeSrc = encodeURIComponent(item.src).replace(/%2F/g, '/');
+      document.getElementById('lightboxImg').src = "photos/" + safeSrc;
+      document.getElementById('lightboxTitle').textContent = item.title;
+      document.getElementById('lightboxDesc').textContent = item.desc;
+    }
+
+    function prevLightbox() {
+      activeLightboxIndex = (activeLightboxIndex - 1 + photoCatalog.length) % photoCatalog.length;
+      updateLightboxContent();
+    }
+
+    function nextLightbox() {
+      activeLightboxIndex = (activeLightboxIndex + 1) % photoCatalog.length;
+      updateLightboxContent();
+    }
+
+    // Keyboard support for Lightbox
+    window.addEventListener('keydown', (e) => {
+      const lb = document.getElementById('lightbox');
+      if (lb.classList.contains('active')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') prevLightbox();
+        if (e.key === 'ArrowRight') nextLightbox();
+      }
+    });
+
+    // Inquiry form handling
+    function handleInquirySubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('inq_name').value;
+      const company = document.getElementById('inq_company').value;
+      const email = document.getElementById('inq_email').value;
+      const phone = document.getElementById('inq_phone').value;
+      const arrival = document.getElementById('inq_arrival').value;
+      const duration = document.getElementById('inq_duration').value;
+      const transport = document.getElementById('inq_transport').value;
+      const notes = document.getElementById('inq_notes').value;
+
+      const subject = encodeURIComponent("The Ashwood Private Stay Inquiry - " + name);
+      const body = encodeURIComponent(
+        "THE ASHWOOD RESIDENCE INQUIRY\n" +
+        "===============================\n" +
+        "Principal: " + name + "\n" +
+        "Company: " + company + "\n" +
+        "Email: " + email + "\n" +
+        "Phone: " + phone + "\n" +
+        "Arrival: " + arrival + "\n" +
+        "Stay Horizon: " + duration + "\n" +
+        "Transportation Package: " + transport + "\n\n" +
+        "Notes & Special Requests:\n" + notes
+      );
+
+      document.getElementById('inquirySuccess').style.display = 'block';
+      setTimeout(() => {
+        window.location.href = "mailto:concierge@theashwoodnashville.com?subject=" + subject + "&body=" + body;
+      }, 600);
+    }
+  </script>
+</body>
+</html>
