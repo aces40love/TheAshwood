@@ -1013,7 +1013,6 @@
       color: var(--accent-gold);
     }
   </style>
-  <link rel="stylesheet" href="photo-labels.css" />
 </head>
 <body>
   <header class="site-header" id="header">
@@ -1042,105 +1041,134 @@
       <a class="gallery-back" href="index.html#spaces">← Back to The Curated Spaces</a>
       <span class="eyebrow">Photograph Gallery</span>
       <h2>Epicurean Kitchen &amp; Dining</h2>
-      <p class="section-desc">The main kitchen, dining room, and separate basement kitchenette.</p>
-      <span class="gallery-photo-count">7 Photographs</span>
+      <p class="section-desc">Island seating, the chef's range, and the formal sage dining room.</p>
       <div class="gallery-grid" id="galleryGrid" style="margin-top: 48px;">
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-11.jpg" aria-haspopup="dialog" aria-label="Expand Kitchen">
-            <img src="photos/2705604-11.jpg" alt="Kitchen" width="2048" height="1366" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
+      <div class="gallery-card" data-index="0">
+        <div class="card-media">
+          <img src="photos/2705604-11.jpg" alt="Epicurean Kitchen &amp; Central Stair" loading="lazy" />
+          <div class="card-overlay">
             <span class="card-tag">Kitchen &amp; Dining</span>
-            <h3 class="card-title">Kitchen</h3>
-            <p class="card-desc">The main kitchen with a green island, pendant lighting, and white cabinetry.</p>
-          </figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-13.jpg" aria-haspopup="dialog" aria-label="Expand Kitchen View">
-            <img src="photos/2705604-13.jpg" alt="Kitchen View" width="2048" height="1366" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
+            <h4 class="card-title">Epicurean Kitchen &amp; Central Stair</h4>
+            <p class="card-desc">Architectural focal point connecting the entertaining level to upper suites.</p>
+            <button class="view-btn" onclick="openLightbox(0)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-index="1">
+        <div class="card-media">
+          <img src="photos/2705604-13.jpg" alt="Chef’s Island &amp; Formal Dining" loading="lazy" />
+          <div class="card-overlay">
             <span class="card-tag">Kitchen &amp; Dining</span>
-            <h3 class="card-title">Kitchen View</h3>
-            <p class="card-desc">The kitchen island and breakfast seating viewed toward the range.</p>
-          </figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-14.jpg" aria-haspopup="dialog" aria-label="Expand Kitchen View III">
-            <img src="photos/2705604-14.jpg" alt="Kitchen View III" width="2048" height="1366" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
+            <h4 class="card-title">Chef’s Island &amp; Formal Dining</h4>
+            <p class="card-desc">Waterfall quartz island seating 4 with direct sightlines to the formal dining room.</p>
+            <button class="view-btn" onclick="openLightbox(1)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-index="2">
+        <div class="card-media">
+          <img src="photos/2705604-14.jpg" alt="The Heart of the House" loading="lazy" />
+          <div class="card-overlay">
             <span class="card-tag">Kitchen &amp; Dining</span>
-            <h3 class="card-title">Kitchen View III</h3>
-            <p class="card-desc">The island and sink with a view toward the adjoining living space.</p>
-          </figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-12.jpg" aria-haspopup="dialog" aria-label="Expand Cooking Area">
-            <img src="photos/2705604-12.jpg" alt="Cooking Area" width="2048" height="1366" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
+            <h4 class="card-title">The Heart of the House</h4>
+            <p class="card-desc">Bespoke deep emerald and brass appointments with integrated Sub-Zero refrigeration.</p>
+            <button class="view-btn" onclick="openLightbox(2)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-index="3">
+        <div class="card-media">
+          <img src="photos/2705604-12.jpg" alt="Gourmet Culinary Center" loading="lazy" />
+          <div class="card-overlay">
             <span class="card-tag">Kitchen &amp; Dining</span>
-            <h3 class="card-title">Cooking Area</h3>
-            <p class="card-desc">The range, hood, and tiled backsplash beside the kitchen island.</p>
-          </figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-15.jpg" aria-haspopup="dialog" aria-label="Expand Dining Room">
-            <img src="photos/2705604-15.jpg" alt="Dining Room" width="2048" height="1366" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
+            <h4 class="card-title">Gourmet Culinary Center</h4>
+            <p class="card-desc">Professional gas range, custom hood, pot filler, and walk-in pantry storage.</p>
+            <button class="view-btn" onclick="openLightbox(3)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-index="4">
+        <div class="card-media">
+          <img src="photos/2705604-15.jpg" alt="The Formal Sage Dining Salon" loading="lazy" />
+          <div class="card-overlay">
             <span class="card-tag">Kitchen &amp; Dining</span>
-            <h3 class="card-title">Dining Room</h3>
-            <p class="card-desc">The dining room with green walls, upholstered chairs, and a sideboard.</p>
-          </figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-39.jpg" aria-haspopup="dialog" aria-label="Expand Basement Kitchen">
-            <img src="photos/2705604-39.jpg" alt="Basement Kitchen" width="2048" height="1365" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
-            <span class="card-tag">Basement</span>
-            <h3 class="card-title">Basement Kitchen</h3>
-            <p class="card-desc">The basement kitchen with a sink, range, and gray cabinetry.</p>
-          </figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-40.jpg" aria-haspopup="dialog" aria-label="Expand Basement Kitchenette &amp; Stair">
-            <img src="photos/2705604-40.jpg" alt="Basement Kitchenette &amp; Stair" width="2048" height="1366" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
-            <span class="card-tag">Basement</span>
-            <h3 class="card-title">Basement Kitchenette &amp; Stair</h3>
-            <p class="card-desc">The kitchenette area beside the basement entry and open staircase.</p>
-          </figcaption>
-        </figure>
+            <h4 class="card-title">The Formal Sage Dining Salon</h4>
+            <p class="card-desc">Intimate dining room featuring rounded walnut table, modern chandelier, and garden views.</p>
+            <button class="view-btn" onclick="openLightbox(4)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-index="5">
+        <div class="card-media">
+          <img src="photos/2705604-39.jpg" alt="Basement Kitchen" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Kitchen &amp; Dining</span>
+            <h4 class="card-title">Basement Kitchen</h4>
+            <p class="card-desc">Fully equipped kitchen with full-sized stainless appliances, cooktop, and quartz counters.</p>
+            <button class="view-btn" onclick="openLightbox(5)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-index="6">
+        <div class="card-media">
+          <img src="photos/2705604-40.jpg" alt="Basement Kitchenette" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Kitchen &amp; Dining</span>
+            <h4 class="card-title">Basement Kitchenette</h4>
+            <p class="card-desc">Architectural focal point connecting the entertaining level to upper suites.</p>
+            <button class="view-btn" onclick="openLightbox(6)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </section>
 
-  <dialog class="lightbox" id="lightbox" aria-labelledby="lightboxTitle" aria-describedby="lightboxDesc">
-    <button type="button" class="lightbox-close" aria-label="Close photograph" autofocus>&times;</button>
-    <button type="button" class="lightbox-nav lightbox-prev" aria-label="Previous photograph">&#8249;</button>
-    <button type="button" class="lightbox-nav lightbox-next" aria-label="Next photograph">&#8250;</button>
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <button class="lightbox-nav lightbox-prev" onclick="prevLightbox()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-next" onclick="nextLightbox()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
     <div class="lightbox-content">
       <div class="lightbox-img-wrapper">
-        <img id="lightboxImg" alt="" />
+        <img id="lightboxImg" src="" alt="The Ashwood Architectural Perspective" />
       </div>
-      <div class="lightbox-info" aria-live="polite">
-        <p class="lightbox-counter" id="lightboxCounter"></p>
-        <h2 class="lightbox-title" id="lightboxTitle"></h2>
+      <div class="lightbox-info">
+        <h4 class="lightbox-title" id="lightboxTitle"></h4>
         <p class="lightbox-desc" id="lightboxDesc"></p>
       </div>
     </div>
-  </dialog>
+  </div>
 
   <footer class="site-footer">
     <div class="container">
@@ -1161,6 +1189,57 @@
     </div>
   </footer>
 
-  <script src="photo-gallery.js" defer></script>
+  <script>
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    const photoCatalog = [{"src": "2705604-11.jpg", "title": "Epicurean Kitchen & Central Stair", "category": "kitchen", "tag": "Kitchen & Dining", "desc": "Architectural focal point connecting the entertaining level to upper suites."}, {"src": "2705604-13.jpg", "title": "Chef’s Island & Formal Dining", "category": "kitchen", "tag": "Kitchen & Dining", "desc": "Waterfall quartz island seating 4 with direct sightlines to the formal dining room."}, {"src": "2705604-14.jpg", "title": "The Heart of the House", "category": "kitchen", "tag": "Kitchen & Dining", "desc": "Bespoke deep emerald and brass appointments with integrated Sub-Zero refrigeration."}, {"src": "2705604-12.jpg", "title": "Gourmet Culinary Center", "category": "kitchen", "tag": "Kitchen & Dining", "desc": "Professional gas range, custom hood, pot filler, and walk-in pantry storage."}, {"src": "2705604-15.jpg", "title": "The Formal Sage Dining Salon", "category": "kitchen", "tag": "Kitchen & Dining", "desc": "Intimate dining room featuring rounded walnut table, modern chandelier, and garden views."}, {"src": "2705604-39.jpg", "title": "Basement Kitchen", "category": "kitchen", "tag": "Kitchen & Dining", "desc": "Fully equipped kitchen with full-sized stainless appliances, cooktop, and quartz counters."}, {"src": "2705604-40.jpg", "title": "Basement Kitchenette", "category": "kitchen", "tag": "Kitchen & Dining", "desc": "Architectural focal point connecting the entertaining level to upper suites."}];
+    let activeLightboxIndex = 0;
+
+    function openLightbox(index) {
+      activeLightboxIndex = index;
+      updateLightboxContent();
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function updateLightboxContent() {
+      const item = photoCatalog[activeLightboxIndex];
+      const safeSrc = encodeURIComponent(item.src).replace(/%2F/g, '/');
+      document.getElementById('lightboxImg').src = "photos/" + safeSrc;
+      document.getElementById('lightboxTitle').textContent = item.title;
+      document.getElementById('lightboxDesc').textContent = item.desc;
+    }
+
+    function prevLightbox() {
+      activeLightboxIndex = (activeLightboxIndex - 1 + photoCatalog.length) % photoCatalog.length;
+      updateLightboxContent();
+    }
+
+    function nextLightbox() {
+      activeLightboxIndex = (activeLightboxIndex + 1) % photoCatalog.length;
+      updateLightboxContent();
+    }
+
+    window.addEventListener('keydown', (e) => {
+      const lb = document.getElementById('lightbox');
+      if (lb.classList.contains('active')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') prevLightbox();
+        if (e.key === 'ArrowRight') nextLightbox();
+      }
+    });
+  </script>
 </body>
 </html>

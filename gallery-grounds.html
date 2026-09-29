@@ -1013,7 +1013,6 @@
       color: var(--accent-gold);
     }
   </style>
-  <link rel="stylesheet" href="photo-labels.css" />
 </head>
 <body>
   <header class="site-header" id="header">
@@ -1042,138 +1041,164 @@
       <a class="gallery-back" href="index.html#spaces">← Back to The Curated Spaces</a>
       <span class="eyebrow">Photograph Gallery</span>
       <h2>Pool &amp; Veranda</h2>
-      <p class="section-desc">The pool, rear elevation, covered decks, and views across the courtyard.</p>
-      <span class="gallery-photo-count">10 Photographs</span>
+      <p class="section-desc">Heated pool, covered verandas, and the estate grounds after dark.</p>
       <div class="gallery-grid" id="galleryGrid" style="margin-top: 48px;">
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-1.jpg" aria-haspopup="dialog" aria-label="Expand Pool at Twilight">
-            <img src="photos/2705604-1.jpg" alt="Pool at Twilight" width="2048" height="1366" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
+      <div class="gallery-card" data-index="0">
+        <div class="card-media">
+          <img src="photos/2705604-1.jpg" alt="The Twilight Pool Oasis" loading="lazy" />
+          <div class="card-overlay">
             <span class="card-tag">Pool &amp; Grounds</span>
-            <h3 class="card-title">Pool at Twilight</h3>
-            <p class="card-desc">The illuminated pool beside the main house at dusk.</p>
-          </figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-44.jpg" aria-haspopup="dialog" aria-label="Expand Pool">
-            <img src="photos/2705604-44.jpg" alt="Pool" width="2048" height="1366" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
+            <h4 class="card-title">The Twilight Pool Oasis</h4>
+            <p class="card-desc">Heated architectural pool surrounded by manicured turf, bistro illumination, and private lounging.</p>
+            <button class="view-btn" onclick="openLightbox(0)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-index="1">
+        <div class="card-media">
+          <img src="photos/2705604-44.jpg" alt="Poolside Loungers &amp; Lawn" loading="lazy" />
+          <div class="card-overlay">
             <span class="card-tag">Pool &amp; Grounds</span>
-            <h3 class="card-title">Pool</h3>
-            <p class="card-desc">A daytime view along the pool and stone terrace.</p>
-          </figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-43.jpg" aria-haspopup="dialog" aria-label="Expand Pool &amp; Rear Verandas">
-            <img src="photos/2705604-43.jpg" alt="Pool &amp; Rear Verandas" width="2048" height="1365" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
+            <h4 class="card-title">Poolside Loungers &amp; Lawn</h4>
+            <p class="card-desc">Sunbathing terrace with premium chaise lounges and privacy fencing.</p>
+            <button class="view-btn" onclick="openLightbox(1)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-index="2">
+        <div class="card-media">
+          <img src="photos/2705604-43.jpg" alt="Pool" loading="lazy" />
+          <div class="card-overlay">
             <span class="card-tag">Pool &amp; Grounds</span>
-            <h3 class="card-title">Pool &amp; Rear Verandas</h3>
-            <p class="card-desc">The pool with the main house and stacked covered decks beyond.</p>
-          </figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-3.jpg" aria-haspopup="dialog" aria-label="Expand Pool Courtyard">
-            <img src="photos/2705604-3.jpg" alt="Pool Courtyard" width="2048" height="1366" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
+            <h4 class="card-title">Pool</h4>
+            <p class="card-desc">Complete view of main residence and carriage house illuminated against the Nashville sky.</p>
+            <button class="view-btn" onclick="openLightbox(2)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-index="3">
+        <div class="card-media">
+          <img src="photos/2705604-3.jpg" alt="Pool Courtyard" loading="lazy" />
+          <div class="card-overlay">
             <span class="card-tag">Pool &amp; Grounds</span>
-            <h3 class="card-title">Pool Courtyard</h3>
-            <p class="card-desc">An alternate daytime perspective across the pool toward the rear decks.</p>
-          </figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-2.jpg" aria-haspopup="dialog" aria-label="Expand Back of House">
-            <img class="portrait" src="photos/2705604-2.jpg" alt="Back of House" width="1366" height="2048" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
-            <span class="card-tag">Rear Exterior</span>
-            <h3 class="card-title">Back of House</h3>
-            <p class="card-desc">The rear elevation and covered decks viewed from the garden path.</p>
-          </figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-42.jpg" aria-haspopup="dialog" aria-label="Expand Backyard View">
-            <img src="photos/2705604-42.jpg" alt="Backyard View" width="2048" height="1366" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
-            <span class="card-tag">Rear Exterior</span>
-            <h3 class="card-title">Backyard View</h3>
-            <p class="card-desc">The covered lower deck and lawn beside the main house.</p>
-          </figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-41.jpg" aria-haspopup="dialog" aria-label="Expand Lower Deck">
-            <img src="photos/2705604-41.jpg" alt="Lower Deck" width="2048" height="1366" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
-            <span class="card-tag">Decks</span>
-            <h3 class="card-title">Lower Deck</h3>
-            <p class="card-desc">The covered lower deck with ceiling fans and a view across the courtyard.</p>
-          </figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-19.jpg" aria-haspopup="dialog" aria-label="Expand Upstairs Deck">
-            <img src="photos/2705604-19.jpg" alt="Upstairs Deck" width="2048" height="1365" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
-            <span class="card-tag">Decks</span>
-            <h3 class="card-title">Upstairs Deck</h3>
-            <p class="card-desc">The upstairs covered deck beside the sliding glass doors and outdoor fireplace.</p>
-          </figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-20.jpg" aria-haspopup="dialog" aria-label="Expand Upstairs Deck Fireplace">
-            <img src="photos/2705604-20.jpg" alt="Upstairs Deck Fireplace" width="2048" height="1365" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
-            <span class="card-tag">Decks</span>
-            <h3 class="card-title">Upstairs Deck Fireplace</h3>
-            <p class="card-desc">The covered deck fireplace and railing in the evening light.</p>
-          </figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <a class="photo-open" href="photos/2705604-21.jpg" aria-haspopup="dialog" aria-label="Expand Deck View">
-            <img src="photos/2705604-21.jpg" alt="Deck View" width="2048" height="1366" loading="lazy" decoding="async" />
-            <span class="photo-expand">View photograph</span>
-          </a>
-          <figcaption class="photo-caption">
-            <span class="card-tag">Decks</span>
-            <h3 class="card-title">Deck View</h3>
-            <p class="card-desc">An evening view from the deck across the carriage-house roof and surrounding trees.</p>
-          </figcaption>
-        </figure>
+            <h4 class="card-title">Pool Courtyard</h4>
+            <p class="card-desc">Heated architectural pool surrounded by manicured turf, bistro illumination, and private lounging.</p>
+            <button class="view-btn" onclick="openLightbox(3)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-index="4">
+        <div class="card-media">
+          <img src="photos/2705604-42.jpg" alt="Pool Terrace from Covered Veranda" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Pool &amp; Grounds</span>
+            <h4 class="card-title">Pool Terrace from Covered Veranda</h4>
+            <p class="card-desc">Architectural connection between main residence covered deck and pool terrace.</p>
+            <button class="view-btn" onclick="openLightbox(4)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-index="5">
+        <div class="card-media">
+          <img src="photos/2705604-41.jpg" alt="Lower Deck" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Pool &amp; Grounds</span>
+            <h4 class="card-title">Lower Deck</h4>
+            <p class="card-desc">Deep shaded outdoor salon with custom teak furnishings overlooking the pool.</p>
+            <button class="view-btn" onclick="openLightbox(5)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-index="6">
+        <div class="card-media">
+          <img src="photos/2705604-19.jpg" alt="The Grand Upper Veranda" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Pool &amp; Grounds</span>
+            <h4 class="card-title">The Grand Upper Veranda</h4>
+            <p class="card-desc">Expansive covered cedar deck with dual ceiling fans and panoramic views of the estate grounds.</p>
+            <button class="view-btn" onclick="openLightbox(6)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-index="7">
+        <div class="card-media">
+          <img src="photos/2705604-20.jpg" alt="Evening Veranda &amp; Courtyard" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Pool &amp; Grounds</span>
+            <h4 class="card-title">Evening Veranda &amp; Courtyard</h4>
+            <p class="card-desc">Private illuminated courtyard with gas fire accents and heated outdoor living spaces.</p>
+            <button class="view-btn" onclick="openLightbox(7)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-index="8">
+        <div class="card-media">
+          <img src="photos/2705604-21.jpg" alt="Upper Balcony View" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-tag">Pool &amp; Grounds</span>
+            <h4 class="card-title">Upper Balcony View</h4>
+            <p class="card-desc">Elevated terrace connecting the upper living quarters to the private grounds.</p>
+            <button class="view-btn" onclick="openLightbox(8)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Expand View</span>
+            </button>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </section>
 
-  <dialog class="lightbox" id="lightbox" aria-labelledby="lightboxTitle" aria-describedby="lightboxDesc">
-    <button type="button" class="lightbox-close" aria-label="Close photograph" autofocus>&times;</button>
-    <button type="button" class="lightbox-nav lightbox-prev" aria-label="Previous photograph">&#8249;</button>
-    <button type="button" class="lightbox-nav lightbox-next" aria-label="Next photograph">&#8250;</button>
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <button class="lightbox-nav lightbox-prev" onclick="prevLightbox()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-next" onclick="nextLightbox()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
     <div class="lightbox-content">
       <div class="lightbox-img-wrapper">
-        <img id="lightboxImg" alt="" />
+        <img id="lightboxImg" src="" alt="The Ashwood Architectural Perspective" />
       </div>
-      <div class="lightbox-info" aria-live="polite">
-        <p class="lightbox-counter" id="lightboxCounter"></p>
-        <h2 class="lightbox-title" id="lightboxTitle"></h2>
+      <div class="lightbox-info">
+        <h4 class="lightbox-title" id="lightboxTitle"></h4>
         <p class="lightbox-desc" id="lightboxDesc"></p>
       </div>
     </div>
-  </dialog>
+  </div>
 
   <footer class="site-footer">
     <div class="container">
@@ -1194,6 +1219,57 @@
     </div>
   </footer>
 
-  <script src="photo-gallery.js" defer></script>
+  <script>
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    const photoCatalog = [{"src": "2705604-1.jpg", "title": "The Twilight Pool Oasis", "category": "grounds", "tag": "Pool & Grounds", "desc": "Heated architectural pool surrounded by manicured turf, bistro illumination, and private lounging."}, {"src": "2705604-44.jpg", "title": "Poolside Loungers & Lawn", "category": "grounds", "tag": "Pool & Grounds", "desc": "Sunbathing terrace with premium chaise lounges and privacy fencing."}, {"src": "2705604-43.jpg", "title": "Pool", "category": "grounds", "tag": "Pool & Grounds", "desc": "Complete view of main residence and carriage house illuminated against the Nashville sky."}, {"src": "2705604-3.jpg", "title": "Pool Courtyard", "category": "grounds", "tag": "Pool & Grounds", "desc": "Heated architectural pool surrounded by manicured turf, bistro illumination, and private lounging."}, {"src": "2705604-42.jpg", "title": "Pool Terrace from Covered Veranda", "category": "grounds", "tag": "Pool & Grounds", "desc": "Architectural connection between main residence covered deck and pool terrace."}, {"src": "2705604-41.jpg", "title": "Lower Deck", "category": "grounds", "tag": "Pool & Grounds", "desc": "Deep shaded outdoor salon with custom teak furnishings overlooking the pool."}, {"src": "2705604-19.jpg", "title": "The Grand Upper Veranda", "category": "grounds", "tag": "Pool & Grounds", "desc": "Expansive covered cedar deck with dual ceiling fans and panoramic views of the estate grounds."}, {"src": "2705604-20.jpg", "title": "Evening Veranda & Courtyard", "category": "grounds", "tag": "Pool & Grounds", "desc": "Private illuminated courtyard with gas fire accents and heated outdoor living spaces."}, {"src": "2705604-21.jpg", "title": "Upper Balcony View", "category": "grounds", "tag": "Pool & Grounds", "desc": "Elevated terrace connecting the upper living quarters to the private grounds."}];
+    let activeLightboxIndex = 0;
+
+    function openLightbox(index) {
+      activeLightboxIndex = index;
+      updateLightboxContent();
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function updateLightboxContent() {
+      const item = photoCatalog[activeLightboxIndex];
+      const safeSrc = encodeURIComponent(item.src).replace(/%2F/g, '/');
+      document.getElementById('lightboxImg').src = "photos/" + safeSrc;
+      document.getElementById('lightboxTitle').textContent = item.title;
+      document.getElementById('lightboxDesc').textContent = item.desc;
+    }
+
+    function prevLightbox() {
+      activeLightboxIndex = (activeLightboxIndex - 1 + photoCatalog.length) % photoCatalog.length;
+      updateLightboxContent();
+    }
+
+    function nextLightbox() {
+      activeLightboxIndex = (activeLightboxIndex + 1) % photoCatalog.length;
+      updateLightboxContent();
+    }
+
+    window.addEventListener('keydown', (e) => {
+      const lb = document.getElementById('lightbox');
+      if (lb.classList.contains('active')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') prevLightbox();
+        if (e.key === 'ArrowRight') nextLightbox();
+      }
+    });
+  </script>
 </body>
 </html>
