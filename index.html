@@ -1717,13 +1717,8 @@
                 <input type="date" id="inq_arrival" required />
               </div>
               <div class="form-group">
-                <label>Length of Stay</label>
-                <select id="inq_duration">
-                  <option value="30-60">30 to 60 Days</option>
-                  <option value="60-90">60 to 90 Days</option>
-                  <option value="90-180">90 to 180 Days</option>
-                  <option value="180+">180+ Days (Extended Relocation)</option>
-                </select>
+                <label for="inq_duration">Length of Stay (Days)</label>
+                <input type="number" id="inq_duration" min="30" step="1" inputmode="numeric" placeholder="Number of days" required />
               </div>
             </div>
 
@@ -1747,6 +1742,20 @@
               <label class="check-label">
                 <input type="checkbox" id="inq_culinary" />
                 Add culinary service
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label class="check-label">
+                <input type="checkbox" id="inq_turndown" />
+                Add turndown service
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label class="check-label">
+                <input type="checkbox" id="inq_housekeeping" />
+                Add daily housekeeping
               </label>
             </div>
 
@@ -1834,6 +1843,8 @@
       const residence = residenceSelect.options[residenceSelect.selectedIndex].text;
       const transport = document.getElementById('inq_transport').checked ? "Yes" : "No";
       const culinary = document.getElementById('inq_culinary').checked ? "Yes" : "No";
+      const turndown = document.getElementById('inq_turndown').checked ? "Yes" : "No";
+      const housekeeping = document.getElementById('inq_housekeeping').checked ? "Yes" : "No";
       const notes = document.getElementById('inq_notes').value;
 
       const subject = encodeURIComponent("The Ashwood Private Stay Inquiry - " + name);
@@ -1845,10 +1856,12 @@
         "Email: " + email + "\n" +
         "Phone: " + phone + "\n" +
         "Arrival: " + arrival + "\n" +
-        "Stay Horizon: " + duration + "\n" +
+        "Length of Stay: " + duration + " days\n" +
         "Residence: " + residence + "\n" +
         "Maybach Transportation: " + transport + "\n" +
-        "Culinary Service: " + culinary + "\n\n" +
+        "Culinary Service: " + culinary + "\n" +
+        "Turndown Service: " + turndown + "\n" +
+        "Daily Housekeeping: " + housekeeping + "\n\n" +
         "Notes & Special Requests:\n" + notes
       );
 
