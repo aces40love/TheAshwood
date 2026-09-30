@@ -1094,6 +1094,9 @@
       grid-template-columns: 1fr 1fr;
       gap: 20px;
     }
+    .service-row {
+      align-items: center;
+    }
     label {
       display: block;
       font-size: 11px;
@@ -1116,6 +1119,7 @@
     input[type="checkbox"] {
       width: 18px;
       height: 18px;
+      flex-shrink: 0;
       padding: 0;
       accent-color: var(--accent-gold);
       cursor: pointer;
@@ -1731,32 +1735,34 @@
               </select>
             </div>
 
-            <div class="form-group">
-              <label class="check-label">
-                <input type="checkbox" id="inq_transport" />
-                Add Maybach transportation
-              </label>
+            <div class="form-row service-row">
+              <div class="form-group">
+                <label class="check-label">
+                  <input type="checkbox" id="inq_transport" />
+                  Add Maybach transportation
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="check-label">
+                  <input type="checkbox" id="inq_turndown" />
+                  Add turndown service
+                </label>
+              </div>
             </div>
 
-            <div class="form-group">
-              <label class="check-label">
-                <input type="checkbox" id="inq_culinary" />
-                Add culinary service
-              </label>
-            </div>
-
-            <div class="form-group">
-              <label class="check-label">
-                <input type="checkbox" id="inq_turndown" />
-                Add turndown service
-              </label>
-            </div>
-
-            <div class="form-group">
-              <label class="check-label">
-                <input type="checkbox" id="inq_housekeeping" />
-                Add daily housekeeping
-              </label>
+            <div class="form-row service-row">
+              <div class="form-group">
+                <label class="check-label">
+                  <input type="checkbox" id="inq_culinary" />
+                  Add culinary service
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="check-label">
+                  <input type="checkbox" id="inq_housekeeping" />
+                  Add daily housekeeping
+                </label>
+              </div>
             </div>
 
             <div class="form-group">
